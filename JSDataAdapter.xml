@@ -1,0 +1,590 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+    <doclet-version-NOT-library-version>1.05</doclet-version-NOT-library-version>
+    <class>
+        <name>com.salvadorjhai.data.JSViewHolder</name>
+        <shortname>JSViewHolder</shortname>
+        <comment>ViewHolder implementation</comment>
+        <owner>process</owner>
+        <method>
+            <name>Initialize</name>
+            <comment>Initialize item view layout (View Holder)
+mContainer: 
+mHeight: 
+mWidth: </comment>
+            <returntype>void</returntype>
+            <parameter>
+                <name>mContainer</name>
+                <type>android.view.ViewGroup</type>
+            </parameter>
+            <parameter>
+                <name>mHeight</name>
+                <type>int</type>
+            </parameter>
+            <parameter>
+                <name>mWidth</name>
+                <type>int</type>
+            </parameter>
+        </method>
+        <method>
+            <name>findViewWithTag2</name>
+            <comment>Find view with tag from container
+container: 
+tag: 
+Return type: @return:</comment>
+            <returntype>android.view.View</returntype>
+            <parameter>
+                <name>container</name>
+                <type>android.view.View</type>
+            </parameter>
+            <parameter>
+                <name>tag</name>
+                <type>java.lang.Object</type>
+            </parameter>
+        </method>
+        <method>
+            <name>findViewWithTag</name>
+            <comment>Find view with tag.
+tag: the tag
+Return type: @return:the view</comment>
+            <returntype>android.view.View</returntype>
+            <parameter>
+                <name>tag</name>
+                <type>java.lang.Object</type>
+            </parameter>
+        </method>
+        <method>
+            <name>findViewById</name>
+            <comment>Find view by id.
+id: the id
+Return type: @return:the view</comment>
+            <returntype>android.view.View</returntype>
+            <parameter>
+                <name>id</name>
+                <type>int</type>
+            </parameter>
+        </method>
+        <method>
+            <name>Initialize2</name>
+            <comment>Initialize item view layout (View Holder)
+mContainer: 
+mViewType: 
+mHeight: 
+mWidth: </comment>
+            <returntype>void</returntype>
+            <parameter>
+                <name>mContainer</name>
+                <type>android.view.ViewGroup</type>
+            </parameter>
+            <parameter>
+                <name>mViewType</name>
+                <type>int</type>
+            </parameter>
+            <parameter>
+                <name>mHeight</name>
+                <type>int</type>
+            </parameter>
+            <parameter>
+                <name>mWidth</name>
+                <type>int</type>
+            </parameter>
+        </method>
+        <method>
+            <name>setViewId</name>
+            <comment>Set id to view
+v: View
+id: </comment>
+            <returntype>void</returntype>
+            <parameter>
+                <name>v</name>
+                <type>android.view.View</type>
+            </parameter>
+            <parameter>
+                <name>id</name>
+                <type>int</type>
+            </parameter>
+        </method>
+        <method>
+            <name>findViewById2</name>
+            <comment>Find view by id from container
+container: 
+id: 
+Return type: @return:</comment>
+            <returntype>android.view.View</returntype>
+            <parameter>
+                <name>container</name>
+                <type>android.view.View</type>
+            </parameter>
+            <parameter>
+                <name>id</name>
+                <type>int</type>
+            </parameter>
+        </method>
+        <property>
+            <name>ViewType</name>
+            <returntype>int</returntype>
+            <parameter>
+                <name>viewType</name>
+                <type>int</type>
+            </parameter>
+            <comment></comment>
+        </property>
+        <property>
+            <name>Tag</name>
+            <returntype>java.lang.Object</returntype>
+            <parameter>
+                <name>tag</name>
+                <type>java.lang.Object</type>
+            </parameter>
+            <comment></comment>
+        </property>
+        <property>
+            <name>Height</name>
+            <returntype>int</returntype>
+            <parameter>
+                <name>height</name>
+                <type>int</type>
+            </parameter>
+            <comment>Gets the height of the container</comment>
+        </property>
+        <property>
+            <name>Width</name>
+            <returntype>int</returntype>
+            <parameter>
+                <name>width</name>
+                <type>int</type>
+            </parameter>
+            <comment>Gets the width of the container</comment>
+        </property>
+        <property>
+            <name>Container</name>
+            <returntype>android.view.ViewGroup</returntype>
+            <comment>Gets the container.</comment>
+        </property>
+    </class>
+    <class>
+        <name>com.salvadorjhai.data.JSListAdapter</name>
+        <shortname>JSListAdapter</shortname>
+        <comment>This is a wrapper for ListAdapter</comment>
+        <owner>process</owner>
+        <event>onGetItem(position As int, item as Object)</event>
+        <event>onGetView(position As int, viewHolder As JSViewHolder)</event>
+        <event>onBindView(position As int, viewHolder As JSViewHolder)</event>
+        <method>
+            <name>notifyDataSetInvalidated</name>
+            <comment></comment>
+            <returntype>void</returntype>
+        </method>
+        <method>
+            <name>Initialize</name>
+            <comment>Initialize.
+ba: the ba
+eventName: the event name
+DataSource: the data source</comment>
+            <returntype>void</returntype>
+            <parameter>
+                <name>ba</name>
+                <type>anywheresoftware.b4a.BA</type>
+            </parameter>
+            <parameter>
+                <name>eventName</name>
+                <type>java.lang.String</type>
+            </parameter>
+            <parameter>
+                <name>DataSource</name>
+                <type>anywheresoftware.b4a.objects.collections.List</type>
+            </parameter>
+        </method>
+        <method>
+            <name>areAllItemsEnabled</name>
+            <comment></comment>
+            <returntype>boolean</returntype>
+        </method>
+        <method>
+            <name>ItemUpdateAt</name>
+            <comment>Item update at.
+position: the position
+data: the new data</comment>
+            <returntype>void</returntype>
+            <parameter>
+                <name>position</name>
+                <type>int</type>
+            </parameter>
+            <parameter>
+                <name>data</name>
+                <type>java.lang.Object</type>
+            </parameter>
+        </method>
+        <method>
+            <name>notifyDataSetChanged</name>
+            <comment></comment>
+            <returntype>void</returntype>
+        </method>
+        <method>
+            <name>hasStableIds</name>
+            <comment></comment>
+            <returntype>boolean</returntype>
+        </method>
+        <method>
+            <name>getItemViewType</name>
+            <comment></comment>
+            <returntype>int</returntype>
+            <parameter>
+                <name>arg0</name>
+                <type>int</type>
+            </parameter>
+        </method>
+        <method>
+            <name>getDropDownView</name>
+            <comment></comment>
+            <returntype>android.view.View</returntype>
+            <parameter>
+                <name>arg0</name>
+                <type>int</type>
+            </parameter>
+            <parameter>
+                <name>arg1</name>
+                <type>android.view.View</type>
+            </parameter>
+            <parameter>
+                <name>arg2</name>
+                <type>android.view.ViewGroup</type>
+            </parameter>
+        </method>
+        <method>
+            <name>getView</name>
+            <comment></comment>
+            <returntype>android.view.View</returntype>
+            <parameter>
+                <name>position</name>
+                <type>int</type>
+            </parameter>
+            <parameter>
+                <name>convertView</name>
+                <type>android.view.View</type>
+            </parameter>
+            <parameter>
+                <name>parent</name>
+                <type>android.view.ViewGroup</type>
+            </parameter>
+        </method>
+        <method>
+            <name>registerDataSetObserver</name>
+            <comment></comment>
+            <returntype>void</returntype>
+            <parameter>
+                <name>arg0</name>
+                <type>android.database.DataSetObserver</type>
+            </parameter>
+        </method>
+        <method>
+            <name>isEnabled</name>
+            <comment></comment>
+            <returntype>boolean</returntype>
+            <parameter>
+                <name>arg0</name>
+                <type>int</type>
+            </parameter>
+        </method>
+        <method>
+            <name>getItemId</name>
+            <comment></comment>
+            <returntype>long</returntype>
+            <parameter>
+                <name>position</name>
+                <type>int</type>
+            </parameter>
+        </method>
+        <method>
+            <name>isEmpty</name>
+            <comment></comment>
+            <returntype>boolean</returntype>
+        </method>
+        <method>
+            <name>unregisterDataSetObserver</name>
+            <comment></comment>
+            <returntype>void</returntype>
+            <parameter>
+                <name>arg0</name>
+                <type>android.database.DataSetObserver</type>
+            </parameter>
+        </method>
+        <method>
+            <name>getItem</name>
+            <comment></comment>
+            <returntype>java.lang.Object</returntype>
+            <parameter>
+                <name>position</name>
+                <type>int</type>
+            </parameter>
+        </method>
+        <method>
+            <name>ItemClearAll</name>
+            <comment>Clear all item on the listview</comment>
+            <returntype>void</returntype>
+        </method>
+        <method>
+            <name>Initialize2</name>
+            <comment>Initialize with custom viewCount
+ba: 
+eventName: 
+DataSource: 
+viewTypeCount: the number of types of Views that will be created by getView.
+            Each type represents a set of views that can be converted in
+            getView. (Default value: 1)</comment>
+            <returntype>void</returntype>
+            <parameter>
+                <name>ba</name>
+                <type>anywheresoftware.b4a.BA</type>
+            </parameter>
+            <parameter>
+                <name>eventName</name>
+                <type>java.lang.String</type>
+            </parameter>
+            <parameter>
+                <name>DataSource</name>
+                <type>anywheresoftware.b4a.objects.collections.List</type>
+            </parameter>
+            <parameter>
+                <name>viewTypeCount</name>
+                <type>int</type>
+            </parameter>
+        </method>
+        <method>
+            <name>ItemRemoveAt</name>
+            <comment>Item remove at.
+position: the position</comment>
+            <returntype>void</returntype>
+            <parameter>
+                <name>position</name>
+                <type>int</type>
+            </parameter>
+        </method>
+        <method>
+            <name>ItemAddAt</name>
+            <comment>Add item at specific position
+Index: position
+data: data</comment>
+            <returntype>void</returntype>
+            <parameter>
+                <name>Index</name>
+                <type>int</type>
+            </parameter>
+            <parameter>
+                <name>data</name>
+                <type>java.lang.Object</type>
+            </parameter>
+        </method>
+        <method>
+            <name>ItemAdd</name>
+            <comment>Item add
+data: the data</comment>
+            <returntype>void</returntype>
+            <parameter>
+                <name>data</name>
+                <type>java.lang.Object</type>
+            </parameter>
+        </method>
+        <property>
+            <name>DataSource</name>
+            <returntype>anywheresoftware.b4a.objects.collections.List</returntype>
+            <comment></comment>
+        </property>
+        <property>
+            <name>Count</name>
+            <returntype>int</returntype>
+            <comment></comment>
+        </property>
+        <property>
+            <name>ViewTypeCount</name>
+            <returntype>int</returntype>
+            <comment></comment>
+        </property>
+    </class>
+    <class>
+        <name>com.salvadorjhai.data.JSCursorAdapter</name>
+        <shortname>JSCursorAdapter</shortname>
+        <comment>This is a wrapper for JSCursorAdapter</comment>
+        <owner>process</owner>
+        <event>onGetItem(position As int, item as Object)</event>
+        <event>onGetView(position As int, viewHolder As JSViewHolder)</event>
+        <event>onBindView(position As int, viewHolder As JSViewHolder)</event>
+        <method>
+            <name>Initialize</name>
+            <comment>Initialize.
+ba: the ba
+eventName: the event name
+DataSource: the data source</comment>
+            <returntype>void</returntype>
+            <parameter>
+                <name>ba</name>
+                <type>anywheresoftware.b4a.BA</type>
+            </parameter>
+            <parameter>
+                <name>eventName</name>
+                <type>java.lang.String</type>
+            </parameter>
+            <parameter>
+                <name>DataSource</name>
+                <type>android.database.Cursor</type>
+            </parameter>
+        </method>
+        <method>
+            <name>notifyDataSetInvalidated</name>
+            <comment></comment>
+            <returntype>void</returntype>
+        </method>
+        <method>
+            <name>areAllItemsEnabled</name>
+            <comment></comment>
+            <returntype>boolean</returntype>
+        </method>
+        <method>
+            <name>notifyDataSetChanged</name>
+            <comment></comment>
+            <returntype>void</returntype>
+        </method>
+        <method>
+            <name>hasStableIds</name>
+            <comment></comment>
+            <returntype>boolean</returntype>
+        </method>
+        <method>
+            <name>getItemViewType</name>
+            <comment></comment>
+            <returntype>int</returntype>
+            <parameter>
+                <name>arg0</name>
+                <type>int</type>
+            </parameter>
+        </method>
+        <method>
+            <name>getDropDownView</name>
+            <comment></comment>
+            <returntype>android.view.View</returntype>
+            <parameter>
+                <name>arg0</name>
+                <type>int</type>
+            </parameter>
+            <parameter>
+                <name>arg1</name>
+                <type>android.view.View</type>
+            </parameter>
+            <parameter>
+                <name>arg2</name>
+                <type>android.view.ViewGroup</type>
+            </parameter>
+        </method>
+        <method>
+            <name>getView</name>
+            <comment></comment>
+            <returntype>android.view.View</returntype>
+            <parameter>
+                <name>position</name>
+                <type>int</type>
+            </parameter>
+            <parameter>
+                <name>convertView</name>
+                <type>android.view.View</type>
+            </parameter>
+            <parameter>
+                <name>parent</name>
+                <type>android.view.ViewGroup</type>
+            </parameter>
+        </method>
+        <method>
+            <name>registerDataSetObserver</name>
+            <comment></comment>
+            <returntype>void</returntype>
+            <parameter>
+                <name>arg0</name>
+                <type>android.database.DataSetObserver</type>
+            </parameter>
+        </method>
+        <method>
+            <name>isEnabled</name>
+            <comment></comment>
+            <returntype>boolean</returntype>
+            <parameter>
+                <name>arg0</name>
+                <type>int</type>
+            </parameter>
+        </method>
+        <method>
+            <name>getItemId</name>
+            <comment></comment>
+            <returntype>long</returntype>
+            <parameter>
+                <name>position</name>
+                <type>int</type>
+            </parameter>
+        </method>
+        <method>
+            <name>isEmpty</name>
+            <comment></comment>
+            <returntype>boolean</returntype>
+        </method>
+        <method>
+            <name>getItem</name>
+            <comment></comment>
+            <returntype>java.lang.Object</returntype>
+            <parameter>
+                <name>position</name>
+                <type>int</type>
+            </parameter>
+        </method>
+        <method>
+            <name>unregisterDataSetObserver</name>
+            <comment></comment>
+            <returntype>void</returntype>
+            <parameter>
+                <name>arg0</name>
+                <type>android.database.DataSetObserver</type>
+            </parameter>
+        </method>
+        <method>
+            <name>Initialize2</name>
+            <comment>Initialize with custom viewCount
+ba: 
+eventName: 
+DataSource: 
+viewTypeCount: the number of types of Views that will be created by getView.
+            Each type represents a set of views that can be converted in
+            getView. (Default value: 1)</comment>
+            <returntype>void</returntype>
+            <parameter>
+                <name>ba</name>
+                <type>anywheresoftware.b4a.BA</type>
+            </parameter>
+            <parameter>
+                <name>eventName</name>
+                <type>java.lang.String</type>
+            </parameter>
+            <parameter>
+                <name>DataSource</name>
+                <type>android.database.Cursor</type>
+            </parameter>
+            <parameter>
+                <name>viewTypeCount</name>
+                <type>int</type>
+            </parameter>
+        </method>
+        <property>
+            <name>DataSource</name>
+            <returntype>android.database.Cursor</returntype>
+            <comment></comment>
+        </property>
+        <property>
+            <name>Count</name>
+            <returntype>int</returntype>
+            <comment></comment>
+        </property>
+        <property>
+            <name>ViewTypeCount</name>
+            <returntype>int</returntype>
+            <comment></comment>
+        </property>
+    </class>
+    <version>0.3</version>
+    <author>salvadorjhai</author>
+</root>
