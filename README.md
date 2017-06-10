@@ -2,6 +2,8 @@
 Adapter Wrapper for B4A (Basic4Android)
 Supports List and Cursor Adapter to be use in [JSListView](https://github.com/salvadorjhai/B4A-JSListView)
 
+Copy .jar, .xml to your additional library folder
+
 ### Sample
 ##### Using List Adapter 
 ```
