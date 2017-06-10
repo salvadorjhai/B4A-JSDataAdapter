@@ -36,7 +36,7 @@ listview.Adapter = adapter
 
 
 ### Important events
-`_onGetView(position As Int, viewHolder As JSViewHolder)` - this is the event where you will initialize your item layout, you will need to check if the container is null.
+`_onGetView(position As Int, viewHolder As JSViewHolder)` - this is the event where you will initialize your item layout, you will need to check if the container is null to reuse the existing viewholder.container.
 
 ```
 Sub adapter_onGetView(position As Int, viewHolder As JSViewHolder)
